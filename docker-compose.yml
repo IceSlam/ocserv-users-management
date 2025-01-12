@@ -21,7 +21,7 @@ services:
       - ${PORT:-20443}:443/tcp
       - ${PORT:-20443}:443/udp
     env_file:
-      - ./prod.env
+      - ./stack.env
     networks:
       - shared-app
 
@@ -40,6 +40,6 @@ services:
     volumes:
       - shared-ssl:/etc/nginx/certs
     env_file:
-      - ./prod.env
+      - ./stack.env
     networks:
       - shared-app
