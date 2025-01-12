@@ -7,7 +7,6 @@ networks:
 services:
   ocserv_and_backend:
     restart: always
-    image: ocserv_and_backend:ocserv
     container_name: ocserv_and_backend
     privileged: true
     build:
